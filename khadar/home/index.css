@@ -1,0 +1,305 @@
+/* 
+this is for  home page ::::::
+*/
+@import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
+/*font-family: 'Scheherazade', serif;*/
+.div {
+  display: none;
+}
+* {
+  font-family: "Scheherazade";
+  font-size: large;
+  font-weight: bold;
+  transition: 0.3s linear;
+  margin: 0;
+}
+:root {
+  --bg: rgb(188, 53, 3);
+}
+body {
+  background-image: url(../../img/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+}
+nav {
+  padding: 10px;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+  filter: drop-shadow(0 0 10px black);
+}
+nav ul {
+  padding: 0;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  opacity: 0.6;
+}
+nav a:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+nav svg {
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+.welcome {
+  height: 100vh;
+  width: 30%;
+  border: 3px solid var(--bg);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.274);
+  backdrop-filter: blur(2px);
+  text-align: center;
+}
+.welcome table {
+  direction: rtl;
+}
+.welcome table td {
+  padding: 20px;
+}
+.bd {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+.myspace {
+  color: black;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.274);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+
+.arts {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.arts .nopro {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.274);
+  backdrop-filter: blur(2px);
+}
+.art {
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.403);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 3px solid var(--bg);
+}
+.art table {
+  direction: rtl;
+}
+.art table td {
+  padding: 10px;
+}
+.art .pro_img {
+  width: 200px;
+  margin: 10px;
+}
+.art table a {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: var(--bg);
+  color: white;
+  text-decoration: none;
+}
+.arts .showmore {
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.403);
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+}
+/*this for search page*/
+#search {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.search {
+  padding: 5px 50px;
+  background-color: rgba(255, 255, 255, 0.603);
+  backdrop-filter: blur(1px);
+  border: none;
+  border-bottom: 2px solid var(--bg);
+  border-radius: 10px;
+}
+.searchtbn {
+  margin-top: 10px;
+  padding: 10px 50px;
+  background-color: var(--bg);
+  border-radius: 20px;
+  color: wheat;
+  border: none;
+}
+/* this for message page */
+.lastm {
+  padding-left: 50px;
+}
+.conversation {
+  height: 100vh;
+  width: 80%;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.403);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 3px solid var(--bg);
+}
+.header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.messages {
+  padding:10px ;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: large
+}
+.messages .msg1{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.messages .msg2{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.messages .msg1 .envoyer{
+  max-width: 70%;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 68, 0, 0.741);
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+.messages .msg2 .recevoire{
+  max-width: 70%;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.775);
+  color: white;
+  border-radius: 20px;
+  word-wrap: break-word;
+
+}
+.message {
+  padding: 5px 10px;
+  width: 55%;
+  border-radius: 20px;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.236);
+}
+.send {
+  color: white;
+  background-color: var(--bg);
+  width: 30%;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+}
+
+/* responsive */
+@media screen and (max-width: 750px) {
+  body {
+    background-size: auto;
+  }
+  nav {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul a {
+    padding: 25px 0;
+  }
+  nav svg {
+    display: block;
+    font-size: 40px;
+  }
+  .bd {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bd .welcome {
+    display: none;
+  }
+  #search {
+    flex-direction: column;
+  }
+  .bd .arts .art {
+    display: flex;
+    flex-direction: column;
+  }
+  .conversation{
+    width: 100%;
+    height: 70vh;
+  }
+}
+.loder {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loder div{
+  width: 100px;
+  height: 100px;
+  border: rgba(0, 0, 0, 0.424) 5px solid;
+  border-top: var(--bg) 5px solid;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
